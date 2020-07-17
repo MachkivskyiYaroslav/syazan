@@ -1,0 +1,509 @@
+
+.left-content {
+  .logo-intro {
+    margin-top: 70px;
+    display: flex;
+    align-items: baseline;
+    .name {
+      font-family: Ruda, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 100%;
+      color: #388CF0;
+      margin-left: 18px;
+    }
+  }
+  .text-develop {
+    margin-top: 39px;
+    font-family: Ruda, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    color: #181922;
+  }
+  .since {
+    margin: 26px 0 50px 0;
+    img {
+      width: 166px;
+      height: 55px;
+    }
+  }
+}
+.discuss {
+  button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: #5BB197;
+    padding: 19px 44px;
+    color: #FFFFFF;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}
+#first {
+  position: relative;
+  background: #E2EBEE;
+  .container {
+    display: flex;
+    .right-content {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .slider {
+    @keyframes fadeIn {
+      from {
+        opacity:0;
+      }
+      to {
+        opacity:1;
+      }
+    }
+    position: absolute;
+    max-height: 460px;
+    padding: 50px 120px 0 65px;
+    @media (min-width: 992px) and (max-width: 1199px){
+      padding-right: 0;
+    }
+    top: 35%;
+    background: white;
+    right: 0;
+    .arrows {
+      position: relative;
+      display: flex;
+      align-items: center;
+      .ellipse-slider {
+        position: absolute;
+        right: 10px;
+      }
+      .control-slider {
+        background: #FFFFFF;
+        width: 40px;
+        border: 1px solid #5BB197;
+        box-sizing: border-box;
+        border-radius: 9px;
+        padding: 7px 12px;
+        height: 40px;
+        z-index: 5;
+      }
+      .prev {
+        margin-right: 6px;
+      }
+    }
+    .active {
+      display: flex !important;
+      justify-content: space-between !important;
+      .slide-image{
+        animation:fadeIn .7s ease-in;
+      }
+    }
+    .carousel {
+      top: -52px;
+      z-index: 0;
+    }
+  }
+  .text-info {
+    width: 110px;
+    height: 340px;
+    position: relative;
+  }
+  .latest {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    color: #181922;
+    margin-top: 110px;
+  }
+  .project-name {
+    margin-top: 20px;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #616272;
+  }
+  .learn {
+    position: absolute;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #181922;
+    bottom: 0;
+    a {
+      color: #181922;
+      text-decoration: none;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      right: -20px;
+      display: block;
+      border-right: 3px solid #5BB197;
+      border-bottom: 3px solid #5BB197;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:hover {
+      a {
+        color: #388cf0;
+      }
+    }
+  }
+  .slide-image {
+    img {
+      width: 252px;
+      height: 450px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #first {
+    .container {
+      .row {
+        .left-content {
+          .logo-intro {
+            margin-top: 20px;
+            justify-content: center;
+            display: none;
+          }
+          .text-develop {
+            justify-content: center;
+            text-align: center;
+          }
+          .since {
+            text-align: center;
+          }
+          .discuss {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .slider {
+      padding: 0;
+      position: initial;
+    }
+    .container-slider {
+      background: white;
+      .slider {
+        padding: 0;
+        position: initial;
+        .arrows {
+          padding-left: 5px;
+          padding-top: 25px;
+          .ellipse-slider {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+          }
+        }
+        .carousel {
+          padding-left: 5px;
+        }
+        .carousel-item {
+          .text-info {
+            .project-name {
+              font-size: 11px;
+            }
+            .learn {
+              font-size: 15px;
+            }
+          }
+          .slide-image {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 750px) {
+  #first {
+    .container {
+      .row {
+        .left-content {
+          .logo-intro {
+            margin-top: 20px;
+            justify-content: center;
+            .name {
+              font-size: 20px;
+            }
+          }
+          .text-develop {
+            justify-content: center;
+            text-align: center;
+            font-size: 17px;
+            line-height: 32px;
+          }
+          .since {
+            text-align: center;
+          }
+          .discuss {
+            justify-content: center;
+            text-align: center;
+            button {
+              padding: 12px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .phones {
+    padding-bottom: 50px;
+    .row {
+      .left-content {
+        .logo-intro {
+          display: none;
+        }
+      }
+    }
+  }
+  #first {
+    .container-slider {
+      .slider {
+        background: #E2EBEE;
+        max-width: 720px;
+        padding: 0;
+        top: 0;
+        position: initial;
+      }
+    }
+  }
+}
+#second {
+  padding-top: 80px;
+  padding-bottom: 150px;
+  .row {
+    .image-s {
+      padding-top: 20px;
+      img {
+        width: 100%;
+        max-height: 670px;
+      }
+    }
+    .about-team {
+      margin: 110px 0 0 130px;
+      .title {
+        margin-bottom: 50px;
+        font-family: Ruda, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 100%;
+        color: #5BB197;
+      }
+      .statistic {
+        .block-info {
+          font-family: Rubik, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 130%;
+          color: #616272;
+          margin-bottom: 20px;
+          h2 {
+            font-family: Ruda, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 72px;
+            line-height: 100%;
+            color: #181922;
+            margin: 0;
+            sup {
+              font-size: 18px;
+              top: -40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.join {
+  border: 2px solid #5BB197;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 19px 50px;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #5BB197;
+  background: transparent;
+  a {
+    text-decoration: none;
+    color: #5BB197;
+  }
+}
+.green-line {
+  width: 24px;
+  height: 3px;
+  background: #5BB197;
+  margin: 45px 0 38px 0;
+}
+@media screen and (max-width: 575px) {
+  #second {
+    padding-top: 0;
+    padding-bottom: 50px;
+    .row {
+      .about-team {
+        text-align: center;
+        margin: 50px 0 0 0;
+        .title {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .statistic {
+          .block-info {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  #second {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    .container {
+      .row {
+        .about-team {
+          margin: 50px 0 0 0;
+          .title {
+            margin-bottom: 15px;
+          }
+          .statistic {
+            .block-info {
+              margin-bottom: 10px;
+              h2 {
+                font-size: 50px;
+                sup {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#third {
+  padding-bottom: 30px;
+  background: #E2EBEE;
+  position: relative;
+  .container {
+    .row {
+      .left-content {
+        .logo-intro {
+          margin-top: 40px;
+          align-items: center;
+          img {
+            margin-left: -6px;
+            width: 42px;
+            height: 60px;
+          }
+        }
+      }
+      .right-image {
+        position: relative;
+        right: 0;
+        top: -45px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #third {
+    .container {
+      .row {
+        .left-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .logo-intro {
+            margin-top: 25px;
+            justify-content: center;
+          }
+          .green-line {
+            margin: 20px 0;
+          }
+          .text-develop {
+            font-size: 27px;
+            text-align: center;
+          }
+        }
+        .right-image {
+          position: static;
+          padding-top: 20px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 992px) {
+  #third {
+    .container {
+      .row {
+        .left-content {
+          margin-top: 20px;
+          .text-develop {
+            margin-top: 20px;
+            font-size: 23px;
+            line-height: 27px;
+          }
+          .green-line {
+            margin: 20px 0 20px 0;
+          }
+          .discuss {
+            button {
+              padding: 19px 37px;
+            }
+          }
+        }
+        .right-image {
+          position: static;
+          margin-top: 75px;
+        }
+      }
+    }
+  }
+}

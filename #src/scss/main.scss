@@ -1,0 +1,33 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+@import '_fonts';
+@import '_header';
+@import '_footer';
+.discuss {
+  button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: #5BB197;
+    padding: 19px 44px;
+    color: #FFFFFF;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}

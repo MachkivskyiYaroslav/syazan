@@ -1,0 +1,495 @@
+#vacancies {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  .container {
+    .row {
+      #accordion {
+        width: 100% !important;
+        margin: 30px 10px;
+        .vacancy-row {
+          &:nth-child(1) {
+            padding-top: 0;
+            border-top: none;
+          }
+          padding-top: 50px;
+          border-top: 1px solid #CEDEE3;
+          display: flex;
+          margin-bottom: 50px;
+          .date {
+            padding-left: 0;
+            padding-top: 15px;
+            margin-right: 75px;
+            max-width: 117px;
+            font-family: Rubik, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            align-items: center;
+            color: #616272;
+          }
+          .open-vacancy {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0;
+          }
+          .vacancy-item {
+            .title {
+              font-family: Ruda, sans-serif;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 56px;
+              line-height: 120%;
+              display: flex;
+              align-items: center;
+              color: #181922;
+            }
+            .requirements {
+              margin-top: 30px;
+              width: 310px;
+              display: flex;
+              justify-content: space-between;
+              .image {
+                img {
+                  margin-right: 24px;
+                }
+              }
+              .location {
+                display: flex;
+                align-items: end;
+                margin-right: 15px;
+              }
+              .qualification {
+                display: flex;
+                align-items: end;
+              }
+              .green {
+                font-family: Rubik, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                color: #5BB197;
+                margin-bottom: 0;
+              }
+              .black {
+                margin-bottom: 0;
+                font-family: Rubik, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 160%;
+                color: #616272;
+              }
+            }
+          }
+        }
+        .full-vacancy {
+          margin: 30px 0 60px 5px;
+          .full-text {
+            .title {
+              max-width: 928px;
+              font-family: Rubik, sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 160%;
+              color: #181922;
+              margin-bottom: 45px;
+            }
+            h2 {
+              font-family: Rubik, sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 160%;
+              color: #181922;
+              margin: 40px 0;
+            }
+            ul {
+              list-style: none;
+              padding-left: 17px;
+              li {
+                font-family: Rubik, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 160%;
+                margin-bottom: 30px;
+                color: #616272;
+                &::before {
+                  content: "\2022";
+                  color: #5BB197;
+                  font-weight: bold;
+                  display: inline-block;
+                  width: 1em;
+                  margin-left: -1em;
+                }
+              }
+            }
+            .apply-now {
+              button {
+                margin-top: 70px;
+                border: 1px solid transparent;
+                background: #5BB197;
+                border-radius: 3px;
+                font-family: Rubik, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                text-align: center;
+                padding: 19px 50px;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#career {
+  padding-top: 60px;
+  background: #E2EBEE;
+  display: flex;
+  .container-fluid {
+    .row {
+      .team {
+        position: relative;
+        background: url("../img/team.png") center center;
+        background-size: cover!important;
+        height: 474px;
+        .top-circle {
+          width: 71px;
+          height: 70px;
+          position: absolute;
+          left: 33%;
+          top: -25px;
+          img {
+            width: 100%;
+          }
+        }
+        .right-circle {
+          width: 124px;
+          height: 123px;
+          position: absolute;
+          right: -5%;
+          bottom: 8%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .career-info {
+        padding: 100px 0 0 130px;
+        .title {
+          font-family: Ruda, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 38px;
+          line-height: 100%;
+          display: flex;
+          align-items: end;
+          color: #181922;
+          img {
+            margin-right: 21px;
+            width: 22px;
+            height: 22px;
+          }
+        }
+        .text {
+          margin: 36px 0 75px 0;
+          max-width: 496px;
+          font-family: Rubik, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 160%;
+          color: #181922;
+        }
+        .go-down {
+          display: flex;
+          a {
+            text-decoration: none;
+            font-family: Rubik, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 120%;
+            color: #181922;
+          }
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+#microscope {
+  background: #E2EBEE;
+  padding-top: 46px;
+  max-height: 234px;
+  .container {
+    display: flex;
+    justify-content: center;
+    .image {
+      max-width: 273px;
+      img {
+        width: 100%;
+      }
+    }
+    .about-company {
+      margin-left: 60px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img {
+        width: 22px;
+        height: 22px;
+        margin-right: 21px;
+      }
+      a {
+        position: relative;
+        text-decoration: none;
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 100%;
+        color: #181922;
+        img {
+          width: 5px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+.closed {
+  .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+  }
+  .horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+}
+.opened {
+  opacity: 1;
+  .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+  }
+  .horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+.circle-plus {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  height: 4em;
+  width: 4em;
+  font-size: 1em;
+  .circle {
+    position: relative;
+    width: 2.55em;
+    height: 2.5em;
+    border: none;
+    .horizontal {
+      position: absolute;
+      background-color: #5BB197;
+      width: 30px;
+      height: 3px;
+      left: 50%;
+      margin-left: -15px;
+      top: 50%;
+      margin-top: -2.5px;
+    }
+    .vertical {
+      position: absolute;
+      background-color: #5BB197;
+      width: 3px;
+      height: 30px;
+      left: 50%;
+      margin-left: -2.5px;
+      top: 50%;
+      margin-top: -15px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #vacancies {
+    padding-bottom: 10px;
+    .container {
+      .row {
+        #accordion {
+          .vacancy-row {
+            .date {
+              font-size: 13px;
+              padding: 0;
+              margin-right: 0;
+            }
+            .vacancy-item {
+              .title {
+                font-size: 27px;
+              }
+              .requirements {
+                width: 100%;
+                margin-top: 15px;
+                flex-direction: column;
+              }
+            }
+          }
+          .full-vacancy {
+            margin-left: 0;
+            .full-text {
+              .title {
+                text-align: justify;
+                font-size: 15px;
+              }
+              h2 {
+                margin: 20px 0;
+              }
+              ul {
+                li {
+                  margin-bottom: 10px;
+                }
+              }
+              .apply-now {
+                display: flex;
+                justify-content: center;
+                button {
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #microscope {
+    .container {
+      .about-company {
+        margin-left: 0px;
+        img {
+          margin-right: 10px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  #vacancies {
+    padding-bottom: 0;
+    .container {
+      .row {
+        #accordion {
+          .vacancy-row {
+            .date {
+              padding: 0;
+            }
+            .vacancy-item {
+              .title {
+                font-size: 27px;
+              }
+              .requirements {
+                .location {
+                  margin-right: 15px;
+                }
+              }
+            }
+            .open-vacancy {
+              .circle-plus {
+                padding-top: 0;
+              }
+            }
+          }
+          .full-vacancy {
+            margin-left: 0;
+            .full-text {
+              .apply-now {
+                display: flex;
+                justify-content: center;
+                button {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 775px) and (max-width: 992px) {
+  #career {
+    padding-top: 30px;
+    .container-fluid {
+      .row {
+        .career-info {
+          padding: 70px 0 0 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 775px) {
+  #career {
+    padding-top: 30px;
+    .container-fluid {
+      .row {
+        .team {
+          display: none;
+        }
+        .career-info {
+          padding: 20px;
+          .title {
+            display: flex;
+            justify-content: center;
+          }
+          .text {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .go-down {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 405px) {
+  #microscope {
+    max-height: 100%;
+    padding-top: 20px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .image {
+        max-width: 100%;
+        margin-top: 45px;
+      }
+      .about-company {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

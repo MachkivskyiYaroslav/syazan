@@ -1,0 +1,463 @@
+/*# sourceMappingURL=productone.css.map */
+#title {
+  background: #E2EBEE;
+  padding-bottom: 30px;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    font-family: Ruda, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    color: #181922;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+#product-intro {
+  .first-slide {
+    background: #2A335D url('../img/Mask Group1x.png') center center;
+    background-size: cover!important;
+    padding-bottom: 88px;
+  }
+  .second-slide {
+    background: #011bb0 url("../img/product-2.png") center center;
+    background-size: cover!important;
+    padding-bottom: 88px;
+  }
+  .third-slide {
+    background: #149FED url("../img/product3.png") center center;
+    background-size: cover!important;
+    padding-bottom: 88px;
+    .container {
+      .row {
+        .product {
+          .text {
+            .product-intro {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .words-slide {
+    background: #DAE3C6 url('../img/vx.png') center center;
+    background-size: cover!important;
+    padding-bottom: 88px;
+    .container {
+      .row {
+        .product {
+          .text {
+            .product-name {
+              color: #2B1D13;
+            }
+            .product-intro {
+              color: #555F3E;
+            }
+            .product-properties {
+              .category {
+                .title-category {
+                  color: #A1B179;
+                }
+                .type-category {
+                  color: #2A1D13;
+                }
+              }
+            }
+            .product-link {
+              a {
+                color: #2A1D13;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container {
+    .row {
+      .product {
+        display: flex;
+        padding-top: 90px;
+        .logo {
+          margin-right: 38px;
+          img {
+            width: 55px;
+          }
+        }
+        .text {
+          .product-name {
+            font-family: Rubik, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 100%;
+            color: #FFFFFF;
+          }
+          .product-intro {
+            margin-top: 15px;
+            max-width: 300px;
+            margin-bottom: 25px;
+            font-family: Rubik, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            display: flex;
+            align-items: center;
+            color: #8990B1;
+          }
+          .product-properties {
+            max-width: 225px;
+            display: flex;
+            justify-content: space-between;
+            .title-category {
+              font-family: Rubik, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 140%;
+              color: #8990B1;
+              margin-bottom: 12px;
+            }
+            .type-category {
+              font-family: Rubik, sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 100%;
+              color: #FFFFFF;
+            }
+          }
+          .product-link {
+            margin-top: 42px;
+            a {
+              vertical-align: middle;
+              text-decoration: none;
+              font-family: Rubik, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 140%;
+              color: #FFFFFF;
+              img {
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .translator {
+    .container {
+      .row {
+        .product {
+          .text {
+            .product-properties {
+              .title-category {
+                color: #6FC2F0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-inner {
+    .third-slide {
+      background: #149FED;
+    }
+  }
+}
+#section-about {
+  display: flex;
+  .container-fluid {
+    .row {
+      .satelite {
+        background: #1ad499 url("../img/about-picture.png") center center;
+        background-size: cover!important;
+        height: 474px;
+      }
+      .info-product {
+        padding: 70px 100px 0 100px;
+        .title {
+          font-family: Ruda, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 38px;
+          line-height: 120%;
+          color: #181922;
+          margin-bottom: 29px;
+        }
+        .text {
+          margin-bottom: 29px;
+          font-family: Rubik, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 160%;
+          color: #616272;
+        }
+      }
+    }
+  }
+}
+#iphones {
+  padding-top: 90px;
+  .container {
+    .text-info-satelite {
+      max-width: 662px;
+      margin-top: 30px;
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      text-align: center;
+      color: #616272;
+      margin-bottom: 70px;
+    }
+    .text-satelite {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        max-width: 350px;
+        font-family: Ruda, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        color: #181922;
+      }
+    }
+    .row {
+      .app-phone {
+        display: flex;
+        justify-content: space-between;
+        .first-iphone {
+          padding-top: 55px;
+        }
+        .third-iphone {
+          padding-top: 90px;
+        }
+        .iphone-image {
+          padding-left: 20px;
+          padding-right: 21px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .line-text {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+#video {
+  margin-top: 25px;
+  .container {
+    .row {
+      .video {
+        padding: 0;
+        margin-bottom: 35px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .buttons-row {
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: center;
+      .buttons-store {
+
+          .join {
+            border: 2px solid #5BB197;
+            background: transparent;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 21px 51px;
+            position: relative;
+            margin-right: 20px;
+            font-family: Rubik, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+
+            color: #5BB197;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 26px;
+              right: 25px;
+              display: block;
+              border-right: 3px solid #5BB197;
+              border-bottom: 3px solid #5BB197;
+              width: 10px;
+              height: 10px;
+              transform: translate(-50%, -50%) rotate(-45deg);
+            }
+          }
+
+        .app-store {
+          padding: 16px 46px;
+          background: #1768E2;
+          font-family: Rubik, sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          border: 1px solid transparent;
+          border-radius: 3px;
+          img {
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+          }
+        }
+
+      }
+    }
+  }
+}
+.translator {
+  .product-intro {
+    color: #F3FBFF;
+  }
+}
+.text-info-satelite {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  color: #616272;
+  img {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #product-intro {
+    .carousel-inner {
+      .first-slide {
+        padding-bottom: 50px;
+        background: #2A335D;
+      }
+      .second-slide {
+        padding-bottom: 50px;
+        background: #011bb0;
+      }
+      .third-slide {
+        padding-bottom: 50px;
+        background: #58C4E8;
+      }
+      .words-slide {
+        background: #DAE3C6;
+      }
+    }
+    .container {
+      .row {
+        .product {
+          padding-top: 50px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #section-about {
+    .container-fluid {
+      .row {
+        .info-product {
+          padding: 30px 30px 0 30px;
+          .title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  #section-about {
+    .container-fluid {
+      .row {
+        .info-product {
+          padding: 50px 30px 0 30px;
+          .title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 575px) {
+  #iphones {
+    padding-top: 45px;
+    .container {
+      .row {
+        .app-phone {
+          .first-iphone {
+            padding-top: 20px;
+          }
+          .third-iphone {
+            padding-top: 40px;
+          }
+          .iphone-image {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+      .line-text {
+        margin-top: 0;
+      }
+      .text-info-satelite {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  #video {
+    .container {
+      .buttons-row {
+        .buttons-store {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          .join {
+            margin-right: 0;
+          }
+          button {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@import '_card';
+@import '_idea';
+footer {
+  position: relative;
+}

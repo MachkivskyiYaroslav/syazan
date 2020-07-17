@@ -1,0 +1,251 @@
+.featured-products {
+  background: #E2EBEE;
+  .title-container {
+    .row-products {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 240px;
+      .title {
+        font-family: Ruda, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        color: #181922;
+      }
+    }
+  }
+}
+.learn {
+  position: relative;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+}
+.slider-container {
+  position: relative;
+  margin-top: -220px;
+  .row {
+    #slider-products {
+      width: 100%;
+      height: 424px;
+      .arrows {
+        position: relative;
+        top: 90px;
+        max-width: 250px;
+        left: 60px;
+        z-index: 5;
+        a {
+          background: #FFFFFF;
+          text-decoration: none;
+          border: 1px solid transparent;
+          padding: 10px;
+          border-radius: 9px;
+          margin-right: 6px;
+        }
+      }
+      .carousel {
+        .carousel-inner {
+          .first-item {
+            background: #2A335D url('../img/Mask Group1x.png') center center;
+            background-size: cover!important;
+          }
+          .second-item {
+            background: #011bb0 url("../img/product-2.png") center center;
+            background-size: cover!important;
+          }
+
+          .slide-item {
+            width: 100%;
+            height: 424px;
+            display: flex;
+            .about-product {
+              margin-top: 70px;
+              display: flex;
+              padding-top: 100px;
+              padding-left: 90px;
+              .logo {
+                margin-right: 38px;
+                img {
+                  width: 55px;
+                }
+              }
+              .text {
+                .product-name {
+                  font-family: Rubik, sans-serif;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 34px;
+                  line-height: 100%;
+                  color: #FFFFFF;
+                }
+                .product-intro {
+                  margin-top: 15px;
+                  margin-bottom: 25px;
+                  font-family: Rubik, sans-serif;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 140%;
+                  display: flex;
+                  align-items: center;
+                  color: #8990B1;
+                }
+                .learn {
+                  position: relative;
+                  font-family: Rubik, sans-serif;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 100%;
+                  a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                  }
+                  &:hover {
+                    a {
+                      color: #1869c5;
+                    }
+                    &::after {
+                      border-right-color: #1869c5;
+                      border-bottom-color: #1869c5;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .third-item {
+            background: #149fed url("../img/product3.png") center center;
+            background-size: cover!important;
+            .about-product {
+              .text {
+                .product-intro {
+                  color: white;
+                }
+              }
+            }
+          }
+          .words-item {
+            background: url('../img/slide-bh.png') center center;
+            background-size: cover!important;
+            .about-product {
+              .text {
+                .learn {
+                  &::after {
+
+
+                    top: 9px;
+                    left: 110px;
+                    display: block;
+                    border-right: 3px solid #2A1D13;
+                    border-bottom: 3px solid #2A1D13;
+                    width: 10px;
+                    height: 10px;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                    content: '';
+                    position: absolute;
+                    border-right: 3px solid #2A1D13;
+                    border-bottom: 3px solid #2A1D13;
+                  }
+                  a {
+                    color: #2A1D13;
+                  }
+                  &:hover {
+                    a {
+                      color: #FFFFFF;
+                    }
+                    &::after {
+                      border-right-color: #2A1D13;
+                      border-bottom-color: #2A1D13;
+                    }
+                  }
+                }
+                .product-name {
+                  color: #2B1D13;
+                }
+                .product-intro {
+                  color: #555F3E;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import '_card';
+@import '_idea';
+
+footer {
+  position: relative;
+}
+@media screen and (max-width: 575px) {
+  .slider-container {
+    .row {
+      #slider-products {
+        .arrows {
+          left: 20px;
+          top: 40px;
+        }
+        .carousel {
+          .carousel-inner {
+            .slide-item {
+              .about-product {
+                padding: 30px 10px 30px 10px;
+              }
+            }
+            .third-item {
+              background: #149fed;
+            }
+            .second-item {
+              background: #011bb0;
+            }
+            .first-item {
+              background: #2a335d;
+            }
+            .words-item {
+              background: #DAE3C6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 575px) and (max-width: 992px) {
+  .slider-container {
+    .row {
+      #slider-products {
+        .carousel {
+          .carousel-inner {
+            .third-item {
+              background: #149fed;
+            }
+            .second-item {
+              background: #011bb0;
+            }
+            .first-item {
+              background: #2a335d;
+            }
+            .words-item {
+              background: #DAE3C6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

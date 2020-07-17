@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Out projects</title>
+    <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/products.min.css">
+    <script src="js/library.min.js"></script>
+</head>
+<body>
+@@include('_header.html')
+<div class="featured-products">
+    <div class="container title-container">
+        <div class="row row-products">
+            <div class="title">
+                Featured products
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container slider-container">
+ <div class="row">
+     <div id="slider-products">
+         <div class="arrows">
+             <a class="control-slider prev" href="#carouselExampleControls" role="button" data-slide="prev"><img src="./img/slider-prev.svg" alt=""></a>
+             <a class="control-slider"  href="#carouselExampleControls" role="button" data-slide="next"><img src="./img/slider-next.svg" alt=""></a>
+         </div>
+         <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+             <div class="carousel-inner">
+                 <div class="carousel-item active ">
+                     <div class="first-item slide-item">
+                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 about-product">
+                             <div class="logo">
+                                 <img src="./img/prod-logo-1.png" alt="">
+                             </div>
+                             <div class="text">
+                                 <div class="product-name">Satellite VPN
+                                 </div>
+                                 <div class="product-intro">Now you can stream and watch your favorite online content
+                                     without any restrictions or limitations.
+                                 </div>
+                                 <div class="learn"><a href="./productone.html">Learn more</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="carousel-item">
+                     <div class="slide-item third-item">
+                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 about-product">
+                             <div class="logo">
+                                 <img src="./img/prod-logo-3.png" alt="">
+                             </div>
+                             <div class="text">
+                                 <div class="product-name">Translator +</div>
+                                 <div class="product-intro">Explore the world, <br>
+                                     make friends from around the globe with <br> Translator +
+                                 </div>
+                                 <div class="learn"><a href="./productone.html">Learn more</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+                 <div class="carousel-item">
+                     <div class="slide-item words-item">
+                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 about-product">
+                             <div class="logo">
+                                 <img src="./img/words-logo.png" alt="">
+                             </div>
+                             <div class="text">
+                                 <div class="product-name">Words: tale</div>
+                                 <div class="product-intro">Guess the words, help the owl save <br>
+                                     its children from the evil hunter
+                                 </div>
+                                 <div class="learn"><a href="words.html">Learn more</a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+
+@@include('_card.html')
+@@include('_idea.html')
+@@include('_footer.html')
+<script src="js/card.min.js"></script>
+</body>
+</html>

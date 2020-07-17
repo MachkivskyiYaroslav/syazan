@@ -1,0 +1,71 @@
+#idea-section {
+  background: #E2EBEE;
+  max-height: 410px;
+  .container {
+    .row {
+      .image {
+        position: relative;
+        top: -130px;
+        img {
+          height: 730px;
+        }
+      }
+      .discuss-project {
+        margin-top: 90px;
+        .green-line {
+          margin: 25px 0 26px 0;
+        }
+        .text {
+          font-family: Ruda, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 38px;
+          line-height: 120%;
+          display: flex;
+          align-items: center;
+          color: #181922;
+          span {
+            color: #5BB197;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 775px) {
+  #idea-section {
+    .container {
+      .row {
+        .image {
+          left: -100px;
+        }
+        .discuss-project {
+          .text {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 775px) {
+  #idea-section {
+    padding-bottom: 60px;
+    .container {
+      .row {
+        .image {
+          display: none;
+        }
+        .discuss-project {
+          margin-top: 35px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
